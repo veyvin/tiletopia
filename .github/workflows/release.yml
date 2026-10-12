@@ -76,7 +76,7 @@ jobs:
       - uses: docker/build-push-action@v6
         with:
           context: .
-          push: true
+          push: false
           tags: |
             ghcr.io/geolang/tiletopia:${{ github.ref_name }}
             ghcr.io/geolang/tiletopia:latest
