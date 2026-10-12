@@ -37,6 +37,8 @@ jobs:
       - name: Redirect /api to the crate docs
         run: echo '<meta http-equiv="refresh" content="0;url=tiletopia_core/index.html">' > _site/api/index.html
       - uses: actions/configure-pages@v4
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
